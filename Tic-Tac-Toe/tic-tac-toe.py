@@ -13,7 +13,9 @@ def main():
     print('-----------------------------------------------------')
     
     while not win():
-        ...
+        board()
+        position()
+        win()
 
 def win():
     ...
