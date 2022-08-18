@@ -9,7 +9,7 @@ c = 0
 key = 'X'
 
 def main():
-    global p1,p2
+    global p1,p2,key
     p1 = input("Enter player 1 name: ")
     p2 = input("Enter player 1 name: ")
     print('-----------------------------------------------------')
@@ -21,6 +21,13 @@ def main():
         position()
         win()
 
+    if key == 'O' and not tie:
+        print(f'{p1} wins!')
+    elif key == 'X' and not tie:
+        print(f"{p2} wins!")
+    else:
+        print(f"It's a tie!")
+
 def win():
     global tie
     for i in range(3):
@@ -31,11 +38,11 @@ def win():
         
         for i in range(3):
             for j in range(3):
-                if board[i][j] != 'X' or board[i][j] != 'O':
+                if board[i][j] != 'X' and board[i][j] != 'O':
                     return False
                 
     tie = True
-    return False
+    return True
 
 
 def position():
@@ -45,7 +52,6 @@ def position():
         position_var = int(input(f'{p1} enter the positon: '))
     else:
         position_var = int(input(f'{p2} enter the positon: '))
-    print(r,c)
     if position_var == 1:
         r = 0
         c = 0
