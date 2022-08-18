@@ -8,6 +8,9 @@ c = 0
 def main():
     p1 = input("Enter player 1 name: ")
     p2 = input("Enter player 1 name: ")
+    print('-----------------------------------------------------')
+    print(f'{p1} plays first and {p2} plays next.')
+    print('-----------------------------------------------------')
 
 def win():
     ...
