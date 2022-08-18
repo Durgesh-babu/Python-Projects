@@ -4,6 +4,7 @@ p2 = ''
 tie = False
 r = 0
 c = 0
+key = 'X'
 
 def main():
     p1 = input("Enter player 1 name: ")
