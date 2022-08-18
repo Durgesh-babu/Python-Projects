@@ -28,6 +28,34 @@ def position():
     else:
         position_var = input(f'{p2} enter the positon: ')
     
+    if position_var == 1:
+        r = 0
+        c = 0
+    elif positon_var == 2:
+        r = 0
+        c = 1
+    elif positon_var == 3:
+        r = 0
+        c = 2
+    elif positon_var == 4:
+        r = 1
+        c = 0
+    elif positon_var == 5:
+        r = 1
+        c = 1
+    elif positon_var == 6:
+        r = 1
+        c = 2 
+    elif positon_var == 7:
+        r = 2
+        c = 0
+    elif positon_var == 8:
+        r = 2
+        c = 1
+    elif positon_var == 9:
+        r = 2
+        c = 2
+    
 
 def display_board():
     print(f"---------")
