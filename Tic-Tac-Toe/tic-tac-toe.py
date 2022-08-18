@@ -22,7 +22,12 @@ def win():
     ...
 
 def position():
-    ...
+    positon_var = 0
+    if key == 'X':
+        positon_var = input(f'{p1} enter the positon: ')
+    else:
+        position_var = input(f'{p2} enter the positon: ')
+    
 
 def display_board():
     print(f"---------")
