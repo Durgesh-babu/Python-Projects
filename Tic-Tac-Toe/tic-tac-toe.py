@@ -6,7 +6,8 @@ r = 0
 c = 0
 
 def main():
-    ...
+    p1 = input("Enter player 1 name: ")
+    p2 = input("Enter player 1 name: ")
 
 def win():
     ...
