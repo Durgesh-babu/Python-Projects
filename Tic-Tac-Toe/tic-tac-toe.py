@@ -9,6 +9,7 @@ c = 0
 key = 'X'
 
 def main():
+    global p1,p2
     p1 = input("Enter player 1 name: ")
     p2 = input("Enter player 1 name: ")
     print('-----------------------------------------------------')
@@ -25,7 +26,7 @@ def win():
 
 def position():
     position_var = 0
-    global r,c
+    global r,c,key
     if key == 'X':
         position_var = int(input(f'{p1} enter the positon: '))
     else:
@@ -64,6 +65,8 @@ def position():
 
     if board[r][c] != 'X' and board[r][c] != 'O':
         board[r][c] = key
+        if key == 'X': key = 'O' 
+        else: key = 'X'
     else:
         print("Occupied!")
         position()
